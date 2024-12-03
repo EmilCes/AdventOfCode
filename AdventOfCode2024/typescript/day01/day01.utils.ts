@@ -1,6 +1,5 @@
 export async function getListsFromInput(filePath: string) {
     const input = await Deno.readTextFile(filePath);
-
     const lines = input.split("\n");
 
     const leftSide: number[] = [];
